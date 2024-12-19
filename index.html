@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: {
+              50: '#30AF5B',
+              90: '#292C27',
+            },
+            gray: {
+              10: '#EEEEEE',
+              20: '#A2A2A2',
+              30: '#7B7B7B',
+              50: '#585858',
+              90: '#141414',
+            },
+            orange: {
+              50: '#FF814C',
+            },
+            blue: {
+              70: '#021639',
+            },
+            yellow: {
+              50: '#FEC601',
+            },
+          },
+          backgroundImage: {
+            'bg-img-1': "url('assets/img-1.png')",
+            'bg-img-2': "url('assets/img-2.png')",
+            'feature-bg': "url('assets/feature-bg.png')",
+            pattern: "url('assets/pattern.png')",
+            'pattern-2': "url('assets/pattern-bg.png')",
+          },
+          screens: {
+            xs: '400px',
+            '3xl': '1680px',
+            '4xl': '2200px',
+          },
+          maxWidth: {
+            '10xl': '1512px',
+          },
+          borderRadius: {
+            '5xl': '40px',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body>
+  <main class="relative overflow-hidden">
+    <nav class="flex items-center justify-between mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 relative z-30 py-5">
+      <a href="/">
+        <h1 class="font-bold text-2xl">Minahasa</h1>
+      </a>
+  
+      <ul class="hidden h-full gap-12 lg:flex">
+          <a href="#" class="text-[16px] font-[400] text-gray-50 flex items-center justify-center cursor-pointer pb-1.5 transition-all hover:font-bold">
+            Daftar Wisata
+          </a>
+          <a href="#" class="text-[16px] font-[400] text-gray-50 flex items-center justify-center cursor-pointer pb-1.5 transition-all hover:font-bold">
+            Profil
+          </a>
+          <a href="#" class="text-[16px] font-[400] text-gray-50 flex items-center justify-center cursor-pointer pb-1.5 transition-all hover:font-bold">
+            Berita
+          </a>
+          <a href="#" class="text-[16px] font-[400] text-gray-50 flex items-center justify-center cursor-pointer pb-1.5 transition-all hover:font-bold">
+            Ekraf
+          </a>
+          <a href="#" class="text-[16px] font-[400] text-gray-50 flex items-center justify-center cursor-pointer pb-1.5 transition-all hover:font-bold">
+            Kinerja
+          </a>
+      </ul>
+      <img 
+        src="assets/menu.svg"
+        alt="menu"
+        width=32
+        height=32
+        class="inline-block cursor-pointer lg:hidden"
+      />
+    </nav>
+  
+    <!-- HERO SECTION START -->
+    <section class="mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+      <div class="absolute right-0 top-0 mt-[70px] h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60"></div>
+  
+      <div class="relative z-20 flex flex-1 flex-col xl:w-1/2">
+        <img 
+          src="assets/camp.svg"
+          alt="camp"
+          width=50
+          height=50
+          class="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
+        />
+        <h1 class="text-[52px] font-[700] leading-[120%] lg:text-[88px] lg:font-[700] lg:leading-[120%]">Welocome to Minahasa</h1>
+        <p class="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, fuga?
+        </p>
+  
+        <div class="my-11 flex flex-wrap gap-5">
+          <div class="flex items-center gap-2">
+              <img 
+                src="assets/star.svg"
+                alt="star"
+                width=24
+                height=24
+              />
+              <img 
+                src="assets/star.svg"
+                alt="star"
+                width=24
+                height=24
+              />
+              <img 
+                src="assets/star.svg"
+                alt="star"
+                width=24
+                height=24
+              />
+              <img 
+                src="assets/star.svg"
+                alt="star"
+                width=24
+                height=24
+              />
+              <img 
+                src="assets/star.svg"
+                alt="star"
+                width=24
+                height=24
+              />
+          </div>
+  
+          <p class="bold-16 lg:bold-20 text-blue-70">
+            198k
+            <span class="regular-16 lg:regular-20 ml-1">Excellent Reviews</span>
+          </p>
+        </div>
+  
+        <div class="flex flex-col w-full gap-3 sm:flex-row">
+          <a class="flex items-center justify-center gap-3 rounded-full border border-green-50 bg-green-50 px-8 py-5 text-white">Discover Now</a>
+        </div>
+      </div>
+  
+      <div class="relative flex flex-1 items-start">
+        <div class="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
+  
+           <div class="flex flex-col">
+            <div class="flex items-center justify-between">
+              <p class="text-[16px] font-[400] text-gray-20">Location</p>
+              <img src="assets/close.svg" alt="close" width=24 height=24 />
+            </div>
+            <p class="text-[20px] font-[700] text-white">Minahasa</p>
+          </div>
+  
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <p class="text-[16px] font-[400] block text-gray-20">Distance</p>
+              <p class="text-[20px] font-[700] text-white">173.28 mi</p>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-[16px] font-[400] block text-gray-20">Elevation</p>
+              <p class="text-[20px] font-[700] text-white">2.040 km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+    
+    <!-- GUIDE SECTION START -->
+    <section class="flex justify-center items-center flex-col">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 w-full pb-24">
+        <img src="assets/camp.svg" alt="camp" width="50" height="50" />
+        <p class="uppercase text-[18px] -mt-1 mb-3 text-green-50">
+          We are here for you
+        </p>
+        <div class="flex flex-wrap justify-between gap-5 lg:gap-10">
+          <h2 class="text-[40px] font-[400] leading-[120%] lg:text-[64px] lg:font-[700] xl:max-w-[390px]">Guide You to Easy Path</h2>
+          <p class="text-[16px] text-gray-30 xl:max-w-[520px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veritatis iste inventore qui quibusdam impedit pariatur sapiente libero distinctio atque est, tempore ipsum aperiam ex asperiores, nihil dignissimos ullam praesentium.</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center mx-auto max-w-[1440px] relative w-full">
+        <img 
+          src="assets/tondano.png"
+          alt="boat"
+          width="1440"
+          height="580"
+          class="w-full object-cover object-center lg:rounded-5xl"
+        />
+
+        <div class="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
+          <img 
+            src="assets/meter.svg"
+            alt="meter"
+            width={16}
+            height={158}
+            class="h-full w-auto"
+          />
+          <div class="flex items-center justify-between flex-col">
+            <div class='flex w-full flex-col'>
+              <div class="flex items-center justify-between gap-2 w-full">
+                <p class="text-[16px] font-[400] text-gray-20">Destination</p>
+                <p class="text-[16px] font-[700] text-green-50">48 min</p>
+              </div>
+              <p class="text-[20px] font-[700] mt-2">minahasa</p>
+            </div>
+
+            <div class='flex w-full flex-col'>
+              <p class="text-[16px] font-[400] text-gray-20">Start track</p>
+              <h4 class="text-[20px] font-[700] mt-2 whitespace-nowrap">Gorontalo</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- GUIDE SECTION END -->
+    
+    <!-- DESTINATION SECTION START -->
+    <section class="flex justify-center items-center flex-col overflow-hidden bg-center bg-no-repeat py-24">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 w-9/12 pb-24">
+          <img src="assets/camp.svg" alt="camp" width="50" height="50" />
+          <p class="uppercase text-[18px] font-[400] -mt-1 mb-3 text-green-50">
+          Our Destination
+          </p>
+          <div class="flex justify-between gap-5 lg:gap-10">
+              <div class="">
+                  <h2 class="text-[40px] font-[700] lg:text-[64px] xl:max-w-[1000px]">Popular Destination</h2>
+                  <div class="pt-4">
+                    <a class="flex items-center justify-center gap-3 rounded-full border border-green-50 bg-green-50 px-8 w-1/2 py-5 text-white">Discover Now</a>
+              </div>
+              </div>
+                  <p class="regular-16 text-gray-30 xl:max-w-[520px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veritatis iste inventore qui quibusdam impedit pariatur sapiente libero distinctio atque est, tempore ipsum aperiam ex asperiores, nihil dignissimos ullam praesentium.</p>
+          </div>
+      </div>
+  </section>
+    <!-- DESTINATION SECTION END -->
+    
+    <!-- FEEDBACK SECTION START -->
+    <section class="flex justify-center items-center flex-col overflow-hidden bg-center bg-no-repeat py-24">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 w-9/12 pb-24">
+          <img src="assets/camp.svg" alt="camp" width="50" height="50" />
+          <p class="uppercase text-[18px] font-[400] -mt-1 mb-3 text-green-50">
+          Tourist Feedback
+          </p>
+          <div class="flex justify-between gap-5 lg:gap-10">
+                  <h2 class="text-[40px] font-[700] lg:text-[64px] xl:max-w-[1000px]">Apa kata mereka?</h2>
+          </div>
+      </div>
+
+      <div class="z-20 flex w-full flex-col lg:w-[60%]">
+        <ul class="mt-10 grid gap-10 md:grid-cols-3 lg:mg-20 lg:gap-12">
+          <div class="w-full max-w-sm h-[300px] flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow ">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 mt-3 rounded-full shadow-lg" src="assets/placeholder-user.png" alt="user"/>
+                <h5 class="mb-1 text-xl font-semibold text-gray-900">Pelix</h5>
+                <span class="text-md font-light text-gray-500">Mahasiswa</span>
+                <p class="text-sm text-gray-500 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="w-full max-w-sm h-[300px] flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow ">
+          <div class="flex flex-col items-center pb-10">
+              <img class="w-24 h-24 mb-3 mt-3 rounded-full shadow-lg" src="assets/placeholder-user.png" alt="user"/>
+              <h5 class="mb-1 text-xl font-semibold text-gray-900">Pelix</h5>
+              <span class="text-md font-light text-gray-500">Mahasiswa</span>
+              <p class="text-sm text-gray-500 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+      </div>
+      <div class="w-full max-w-sm h-[300px] flex justify-center items-center bg-white border border-gray-200 rounded-lg shadow ">
+        <div class="flex flex-col items-center pb-10">
+            <img class="w-24 h-24 mb-3 mt-3 rounded-full shadow-lg" src="assets/placeholder-user.png" alt="user"/>
+            <h5 class="mb-1 text-xl font-semibold text-gray-900">Pelix</h5>
+            <span class="text-md font-light text-gray-500">Mahasiswa</span>
+            <p class="text-sm text-gray-500 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+        </ul>
+        
+      </div>
+  </section>
+    <!-- FEEDBACK SECTION END -->
+     
+    <!-- FOOTER START -->
+    <footer class="flex justify-center items-center mb-24">
+      <div class="mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 flex w-full flex-col gap-14">
+        <div class="flex flex-col items-start justify-center gap-[10%] md:flex-row">
+          <div href="/" class="mb-10">
+            <h1 class="font-bold text-2xl">Minahasa</h1>
+            <img src="hilink-logo.svg" alt="logo" width={74} height={29}/> 
+          </div>
+
+          <div class='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
+            <div class="flex flex-col gap-5">
+              <h4 class="text-[18px] font-[700] whitespace-nowrap">Menu</h4>
+              <ul class="text-[14px] font-[400] flex flex-col gap-4 text-gray-30">
+                  <a href="/" >
+                    Beranda
+                  </a>
+                  <a href="/" >
+                    Tentang Kami
+                  </a>
+                  <a href="/" >
+                    Destinasi
+                  </a>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <h4 class="text-[18px] font-[700] whitespace-nowrap">Other Pages</h4>
+              <ul class="text-[14px] font-[400] flex flex-col gap-4 text-gray-30">
+                  <a href="/" >
+                    Privacy & Policy
+                  </a>
+                  <a href="/" >
+                    Terms of use
+                  </a>
+                  <a href="/" >
+                    Disclaimer
+                  </a>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <h4 class="text-[18px] font-[700] whitespace-nowrap">Contact Us</h4>
+              <ul class="text-[14px] font-[400] flex flex-col gap-4 text-gray-30">
+                <div class="flex gap-4 md:flex-col lg:flex-row">
+                  <p class="whitespace-nowrap">Alamat: </p>
+                  <p class="text-[14px] font-[500] whitespace-nowrap text-blue-70">
+                    Kantor Dinas Pariwisata Minahasa – Tondano,Kabupaten Minahasa, Provinsi Sulawesi Utara
+                  </p>
+                </div>
+                <div class="flex gap-4 md:flex-col lg:flex-row">
+                  <p class="whitespace-nowrap">Email: </p>
+                  <p class="text-[14px] font-[500] whitespace-nowrap text-blue-70">
+                    Administrator@dinaspariwisata.minahasakab.go.id
+                  </p>
+                </div>
+                <div class="flex gap-4 md:flex-col lg:flex-row">
+                  <p class="whitespace-nowrap">Contact Person: </p>
+                  <p class="text-[14px] font-[500] whitespace-nowrap text-blue-70">
+                    +628 21 8899 1122
+                  </p>
+                </div>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <h4 class="text-[18px] font-[700] whitespace-nowrap">Socials</h4>
+              <ul class="text-[14px] font-[400] flex gap-4 text-gray-30">
+                  <a href="/" >
+                    <img src="assets/facebook.svg" alt="Logo" width="24" height="24">
+                  </a>
+                  <a href="/" >
+                    <img src="assets/twitter.svg" alt="Logo" width="24" height="24">
+                  </a>
+                  <a href="/" >
+                    <img src="assets/youtube.svg" alt="Logo" width="24" height="24">
+                  </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border bg-gray-20"></div>
+        <p class="text-[14px] w-full text-center text-gray-30">2024 Minahasa | All rights reserved</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+  </main>
+</body>
+</html>
